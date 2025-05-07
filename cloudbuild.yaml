@@ -12,7 +12,7 @@ steps:
     args:
       - -c
       - |
-        curl -u "$ARTIFACTORY_USER:$ARTIFACTORY_PASS" \
+        curl -u "$_ARTIFACTORY_USER:$_ARTIFACTORY_PASS" \
           -T node-app.tar.gz \
           "https://your-artifactory.example.com/artifactory/libs-release-local/com/demo/node-app/1.0.0/node-app.tar.gz"
 options:
